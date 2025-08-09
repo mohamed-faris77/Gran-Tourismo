@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gran Turismo - Luxury & Performance</title>
+  <link rel="shortcut icon" type="image/x-icon" href="./Images/GT1.png" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet"   />
+  <!-- Font Awesome (Working CDN) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    integrity="sha512-9usAa+1rnzA1PvStL7Wq3B4jYIVzUVGQhWj71H8DiJZP4JHylOdQZyJe2QbEL5lDlRw5VY5UvV1nMvJ8S+N0jQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/x-icon" href="../Images/GT.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#home">
+        <!-- Use the new transparent logo -->
+        <img src="../Images/GT1.png" alt="GT Logo" class="navbar-logo me-2">
+        <span>Gran Turismo</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#cars">Cars</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">Services</a>
+            <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+              <li><a class="dropdown-item" href="#sell-car">Sell Your Car</a></li>
+              <li><a class="dropdown-item" href="#emi-calculator">EMI Calculator</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <!-- Theme toggle button at the right end -->
+      <button id="theme-toggle" class="btn btn-outline-secondary ms-auto ms-lg-3" type="button"
+        aria-label="Toggle theme">
+        <i class="bi bi-moon-fill"></i><span> Dark Mode</span>
+      </button>
+    </div>
+  </nav>
+
+
+  <main>
+    <!-- HERO CONTENT SECTION -->
+    <section id="home" class="hero-section text-white py-5">
+      <div class="container text-center animate__animated animate__fadeIn">
+        <h1 class="display-3 fw-bold animate__animated animate__fadeInDown">Gran Turismo Experience</h1>
+        <p class="lead mb-4 animate__animated animate__fadeInUp">Embark on a journey of grand touring luxury and
+          performance.</p>
+        <a href="#cars" class="btn btn-outline-light btn-lg animate__animated animate__zoomIn">Explore Collection</a>
+      </div>
+    </section>
+
+    <!-- FEATURED CAR IMAGE SECTIONS -->
+    <section class="bg-image-section text-white d-flex align-items-center justify-content-center text-center bg-imag4">
+      <div class="overlay-content animate__animated animate__fadeInUp">
+        <h2 class="mb-2 display-5 fw-bold">Mustang</h2>
+        <p class="lead">Classic design meets timeless performance.</p>
+      </div>
+    </section>
+    <section class="bg-image-section text-white d-flex align-items-center justify-content-center text-center bg-imag1">
+      <div class="overlay-content animate__animated animate__fadeInUp">
+        <h2 class="mb-2 display-5 fw-bold">BMW E30 Elegance</h2>
+        <p class="lead">A symbol of driving pleasure and heritage.</p>
+      </div>
+    </section>
+    <section class="bg-image-section text-white d-flex align-items-center justify-content-center text-center bg-imag3">
+      <div class="overlay-content animate__animated animate__fadeInUp">
+        <h2 class="mb-2 display-5 fw-bold">Porsche Classic 911</h2>
+        <p class="lead">Iconic design, exhilarating performance, pure driving emotion.</p>
+      </div>
+    </section>
+    <section class="bg-image-section text-white d-flex align-items-center justify-content-center text-center bg-imag2">
+      <div class="overlay-content animate__animated animate__fadeInUp">
+        <h2 class="mb-2 display-5 fw-bold">Mercedes Benz W124</h2>
+        <p class="lead">The epitome of German engineering and luxury from a golden era.</p>
+      </div>
+    </section>
+
+    <!-- CALL TO ACTION BUTTON SECTION -->
+    <section class="text-center py-5 section-cta animate__animated animate__fadeInUp">
+      <div class="container">
+        <h2 class="mb-4">Ready to find your dream car?</h2>
+        <p class="lead">Our curated collection awaits your discovery.</p>
+        <a href="#cars" class="btn btn-dark btn-lg">View All Models</a>
+      </div>
+    </section>
+
+    <!-- Cars Section -->
+    <section id="cars" class="py-5 section-cars">
+      <div class="container">
+        <h2 class="text-center mb-5 display-4 fw-bold animate__animated animate__fadeInDown">Explore Our Gran
+          Turismo
+          Collection</h2>
+        <p class="text-center lead mb-5 animate__animated animate__fadeInUp">Dive into a world of exclusive
+          automobiles.
+          Each car meticulously selected for its performance, luxury, and heritage.</p>
+        <div class="row" id="cars-container">
+          <!-- Cars will be injected here using JavaScript -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Sell Your Car Section -->
+    <section id="sell-car" class="py-5 section-sell-car">
+      <div class="container">
+        <div class="row justify-content-center align-items-center g-4">
+          <div class="col-lg-6">
+            <div class="section-card p-4 shadow-lg rounded">
+              <h3 class="mb-3"><i class="bi bi-arrow-left-right"></i> Sell or Exchange Your Car</h3>
+              <form id="sellCarForm" autocomplete="off">
+                <div class="mb-3">
+                  <label for="sellType" class="form-label"><i class="bi bi-ui-checks"></i> I want to</label>
+                  <select class="form-select" id="sellType" required>
+                    <option value="">Select an option</option>
+                    <option value="Sell">Sell My Car</option>
+                    <option value="Exchange">Exchange My Car</option>
+                  </select>
+                  <div class="form-text text-danger" id="sellTypeError"></div>
+                </div>
+                <div class="mb-3">
+                  <label for="sellerName" class="form-label"><i class="bi bi-person"></i> Your Name</label>
+                  <input type="text" class="form-control" id="sellerName" required placeholder="Full Name">
+                  <div class="form-text text-danger" id="sellerNameError"></div>
+                </div>
+                <div class="mb-3">
+                  <label for="sellerPhone" class="form-label"><i class="bi bi-telephone"></i> Phone Number</label>
+                  <input type="tel" class="form-control" id="sellerPhone" required placeholder="10-digit number">
+                  <div class="form-text text-danger" id="sellerPhoneError"></div>
+                </div>
+                <div class="mb-3">
+                  <label for="sellerEmail" class="form-label"><i class="bi bi-envelope"></i> Email</label>
+                  <input type="email" class="form-control" id="sellerEmail" required placeholder="name@example.com">
+                  <div class="form-text text-danger" id="sellerEmailError"></div>
+                </div>
+                <div class="mb-3">
+                  <label for="carModel" class="form-label"><i class="bi bi-car-front"></i> Car Model</label>
+                  <input type="text" class="form-control" id="carModel" required placeholder="e.g., BMW M5">
+                  <div class="form-text text-danger" id="carModelError"></div>
+                </div>
+                <div class="d-grid gap-2">
+                  <button type="submit" class="btn btn-primary btn-lg"><i class="bi bi-send"></i> Submit</button>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="col-lg-6 text-center">
+            <img src="../Images/sellcar.jpg" alt="Sell or Exchange Car" class="img-fluid mb-3"
+              style="max-height:320px;">
+            <div class="mt-3">
+              <p><i class="bi bi-clock-history"></i> Quick Evaluation &amp; Hassle-Free Process</p>
+              <p><i class="bi bi-cash-stack"></i> Best Price Guarantee</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EMI Calculator Section -->
+    <section id="emi-calculator" class="py-5 section-emi">
+      <div class="container">
+        <h2 class="text-center mb-5 display-4 fw-bold animate__animated animate__fadeInDown">
+          <i class="bi bi-calculator"></i> EMI Calculator
+        </h2>
+        <div class="emi-banner text-center mb-5 p-4 rounded animate__animated animate__fadeInUp">
+          <h3 class="mb-3"><i class="bi bi-cash-coin"></i> Need Help with Financing?</h3>
+          <p class="lead mb-3">Call us for any type of EMIs and financing options. Our experts are here to help!</p>
+          <button class="btn btn-light btn-lg" onclick="scrollToContact()">
+            <i class="bi bi-telephone"></i> Contact Us Now
+          </button>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-lg-6">
+            <div class="emi-calculator-box p-4 shadow-lg rounded section-card animate__animated animate__fadeInUp">
+              <div class="mb-3">
+                <label for="loanAmount" class="form-label">
+                  <i class="bi bi-currency-rupee"></i> Loan Amount (₹)
+                </label>
+                <input type="number" class="form-control" id="loanAmount" placeholder="Enter loan amount">
+              </div>
+              <div class="mb-3">
+                <label for="interestRate" class="form-label">
+                  <i class="bi bi-percent"></i> Interest Rate (% per annum)
+                </label>
+                <input type="number" class="form-control" id="interestRate" placeholder="Enter annual interest rate"
+                  step="0.1">
+              </div>
+              <div class="mb-3">
+                <label for="loanTenure" class="form-label">
+                  <i class="bi bi-calendar"></i> Loan Tenure (in years)
+                </label>
+                <input type="number" class="form-control" id="loanTenure" placeholder="Enter tenure in years">
+              </div>
+              <div class="d-grid gap-2">
+                <button class="btn btn-primary btn-lg" onclick="calculateEMI()">
+                  <i class="bi bi-calculator"></i> Calculate EMI
+                </button>
+              </div>
+              <div class="emi-result text-center mt-4 d-none" id="emiResult"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5 section-about">
+      <div class="container">
+        <h2 class="text-center mb-5 display-4 fw-bold animate__animated animate__fadeInDown">About Gran Turismo</h2>
+        <div class="row align-items-center mb-5 animate__animated animate__fadeInUp">
+          <div class="col-lg-6">
+            <img src="../Images/grantourismo.jpg" alt="Our Vision" class="img-fluid rounded shadow-sm mb-4 mb-lg-0">
+          </div>
+          <div class="col-lg-6">
+            <p class="lead">At Gran Turismo, we embody the spirit of grand touring - long-distance, high-speed,
+              luxurious travel. We are more than just a dealership; we are curators of automotive excellence.</p>
+            <p>Our journey began with a singular passion: to bring the world's most exquisite luxury and
+              high-performance vehicles directly to enthusiasts and collectors. We pride ourselves on a meticulously
+              curated inventory, featuring iconic brands that define the pinnacle of engineering, design, and
+              prestige.
+            </p>
+          </div>
+        </div>
+
+        <div class="row text-center mt-5 pt-4 border-top animate__animated animate__fadeInUp">
+          <div class="col-md-6 mb-4">
+            <div class="p-4 shadow-sm rounded section-card h-100">
+              <h4 class="mb-3 text-primary">Our Vision</h4>
+              <p>To redefine luxury car ownership by delivering unmatched quality, performance, and customer
+                satisfaction, becoming the undisputed leader in high-end automotive experiences.</p>
+            </div>
+          </div>
+          <div class="col-md-6 mb-4">
+            <div class="p-4 shadow-sm rounded section-card h-100">
+              <h4 class="mb-3 text-success">Our Mission</h4>
+              <p>To provide a seamless and exclusive acquisition process for automotive luxury through integrity,
+                transparency, and an unwavering dedication to service, forging lasting relationships with our
+                discerning
+                clientele.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mt-5 pt-4 border-top animate__animated animate__fadeInUp">
+          <div class="col-12 text-center">
+            <h3 class="mb-4">Our Values</h3>
+            <div class="row justify-content-center">
+              <div class="col-md-4 mb-3">
+                <div
+                  class="p-3 section-card bg-primary text-white rounded shadow-sm h-100 d-flex align-items-center justify-content-center">
+                  <h5>Excellence</h5>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div
+                  class="p-3 section-card bg-dark text-white rounded shadow-sm h-100 d-flex align-items-center justify-content-center">
+                  <h5>Integrity</h5>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div
+                  class="p-3 section-card bg-secondary text-white rounded shadow-sm h-100 d-flex align-items-center justify-content-center">
+                  <h5>Passion</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 section-contact">
+      <div class="container">
+        <div class="row g-4 align-items-center">
+          <div class="col-lg-6">
+            <div class="section-card p-4 shadow-lg rounded">
+              <h3 class="mb-3"><i class="bi bi-envelope-paper"></i> Contact Us</h3>
+              <form id="contactForm">
+                <div class="mb-3">
+                  <label for="name" class="form-label"><i class="bi bi-person"></i> Name</label>
+                  <input type="text" class="form-control" id="name" required placeholder="Your Full Name">
+                </div>
+                <div class="mb-3">
+                  <label for="email" class="form-label"><i class="bi bi-envelope"></i> Email</label>
+                  <input type="email" class="form-control" id="email" required placeholder="name@example.com">
+                </div>
+                <div class="mb-3">
+                  <label for="subject" class="form-label"><i class="bi bi-chat-left-text"></i> Subject</label>
+                  <input type="text" class="form-control" id="subject"
+                    placeholder="e.g., Car Inquiry, Feedback, General Question">
+                </div>
+                <div class="mb-3">
+                  <label for="message" class="form-label"><i class="bi bi-pencil"></i> Message</label>
+                  <textarea class="form-control" id="message" rows="5" required
+                    placeholder="Your message here..."></textarea>
+                </div>
+                <div class="d-grid gap-2">
+                  <button type="submit" class="btn btn-primary btn-lg"><i class="bi bi-send"></i> Send Message</button>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="col-lg-6 text-center">
+            <img src="../Images/contact.png" alt="Contact Illustration" class="img-fluid mb-3"
+              style="max-height:320px;">
+            <div class="mt-3">
+              <p><i class="bi bi-telephone"></i> +91-6380270146</p>
+
+              <!-- Email Field -->
+              <p>
+                <i class="bi bi-envelope"></i>
+                <a href="mailto:example@gran-turismo.com"
+                  class="text-decoration-none text-dark">enquiry@granturismo.ac.in</a>
+              </p>
+
+              <!-- Google Maps Address Link -->
+              <p>
+                <i class="bi bi-geo-alt"></i>
+                <a href="https://maps.app.goo.gl/cUGsi7VAzFREuQvA6" target="_blank"
+                  class="text-decoration-none text-dark address-hover">
+                  Near Hebbal Flyover, Hebbal, Bengaluru - 560092
+                </a>
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <!-- Book Form Section (Initially Hidden) -->
+    <section id="book-form-section" class="py-5 section-book-form d-none">
+      <div class="container">
+        <div class="section-card p-4 shadow-lg rounded">
+          <h3 class="mb-3">Book Your Dream Car</h3>
+          <form id="bookCarForm">
+            <div class="mb-3">
+              <label for="bookCarName" class="form-label">Car Name</label>
+              <input type="text" class="form-control" id="bookCarName" readonly>
+            </div>
+            <div class="mb-3">
+              <label for="bookUserName" class="form-label">Your Name</label>
+              <input type="text" class="form-control" id="bookUserName" required>
+            </div>
+            <div class="mb-3">
+              <label for="bookUserEmail" class="form-label">Your Email</label>
+              <input type="email" class="form-control" id="bookUserEmail" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Book Now</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="text-white text-center py-4">
+    <div class="container">
+      <p class="mb-0">&copy; <a href="https://porfoliofaris.netlify.app/"> Faris</a> - 2025 Gran Turismo. All rights
+        reserved.</p>
+      <div class="social-links mt-2">
+        <a href="#" class="text-white mx-2"><img src="" alt=""><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="text-white mx-2"><img src="" alt=""><i class="fab fa-twitter"></i></a>
+        <a href="#" class="text-white mx-2"><img src="" alt=""><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal for Car Info -->
+  <div class="modal fade" id="carModal" tabindex="-1" aria-labelledby="modalTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalTitle">Car Info</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body" id="modalBody">
+          <!-- Dynamic content goes here -->
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary" onclick="bookNow()">Book Now</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal for Feedback -->
+  <div class="modal fade" id="feedbackModal" tabindex="-1" aria-labelledby="feedbackModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="feedbackModalLabel">Thank You!</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body" id="feedbackModalBody">
+          <!-- Message will be set by JS -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+  <script src="https://kit.fontawesome.com/YOUR_FONT_AWESOME_KIT_CODE.js" crossorigin="anonymous"></script>
+  <!-- IMPORTANT: Replace with your actual Font Awesome kit code for social icons and moon icon -->
+</body>
+
+</html>
