@@ -1,4 +1,4 @@
-# 🚗 Gran Tourismo
+# 🚗 Gran Turismo
 
 Gran Tourismo is a premium front-end **car dealership website** built with **HTML**, **CSS (Bootstrap)**, and **JavaScript**.  
 It provides an immersive, responsive, and interactive virtual showroom experience for luxury and sports cars.
