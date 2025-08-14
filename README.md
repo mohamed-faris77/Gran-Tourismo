@@ -1,6 +1,6 @@
 # 🚗 Gran Turismo
 
-Gran Tourismo is a premium front-end **car dealership website** built with **HTML**, **CSS (Bootstrap)**, and **JavaScript**.  
+Gran Turismo is a premium front-end **car dealership website** built with **HTML**, **CSS (Bootstrap)**, and **JavaScript**.  
 It provides an immersive, responsive, and interactive virtual showroom experience for luxury and sports cars.
 
 ---
@@ -37,7 +37,7 @@ It provides an immersive, responsive, and interactive virtual showroom experienc
 
 ## 📥 Git Clone
 
-git clone https://github.com/mohamed-faris77/Gran-Tourismo.git
+git clone https://github.com/mohamed-faris77/Gran-Turismo.git
 
 🌍 Live Demo
 🔗https://grantourismo.netlify.app/
